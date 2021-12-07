@@ -1,3 +1,3 @@
 # Projekt "OpenAPM"
-![alt text](/bild.jpeg)
+![alt text](/grafana_bild.jpeg)
 
