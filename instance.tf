@@ -47,8 +47,10 @@ resource "aws_instance" "prometheus_instance" {
       "sudo apt -y install docker-ce",
       "sudo mkdir /prometheus-data",
       "sudo cp /tmp/prometheus.yml /prometheus-data/.",
-      "sudo docker run -d -p 9090:9090 --name=prometheus -v /prometheus-data/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus",
-      "sudo docker run -d -p 3000:3000 --name=grafana grafana/grafana"
+      #"sudo docker run -d -p 9090:9090 --name=prometheus -v /prometheus-data/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus",
+      "sudo docker run -d -p 9090:9090 --name=prometheus -v /prometheus-data/prometheus.yml:/etc/prometheus/prometheus.yml --restart=always prom/prometheus",
+      #"sudo docker run -d -p 3000:3000 --name=grafana grafana/grafana"
+       "sudo docker run -d -p 3000:3000 --name=grafana --restart=always grafana/grafana"
 
     ]
   }
