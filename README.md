@@ -10,25 +10,25 @@ AWS EC2-Instance:
 - AWS Instance type: t3.micro
 - Ports: 3000, 9090, 22, 
 
-# Download Terraform für UBUNTU
+# Schritt 1: Download Terraform on UBUNTU
 Aktuelle Version von Terraform und Dokumentation sind hier: https://www.terraform.io/downloads </br>
 ![alt text](/ter_bild.jpeg) </br>
 
 
-### Schritt 1: Register HashiCorp GPG keys </br>
+### 1: Register HashiCorp GPG keys </br>
 $ curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add - </br>
 
-### Schritt 2: Add HashiCorp package repository </br>
+### 2: add HashiCorp package repository </br>
 $ sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main" </br>
 
-### Schritt 3: Update "Ubuntu" packages list </br>
+### 3: Update "Ubuntu" </br>
 $ sudo apt-get update </br>
 
-### Schritt 3: Install Terraform on Ubuntu </br> 
+### 4: Install Terraform on Ubuntu </br> 
 $ sudo apt-get install terraform </br>
 
-### Schritt 4: Überprüfen Sie die Version von Terraform </br>
+### 5: Check version of Terraform </br>
 $ terraform -v </br>
 
-### Schritt 5: Wo befindet sich Terraform </br>
+### 6: Check PATH of Terraform </br>
 $ which terraform </br>
