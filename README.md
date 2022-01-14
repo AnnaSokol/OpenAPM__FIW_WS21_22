@@ -11,24 +11,24 @@ AWS EC2-Instance:
 - Ports: 3000, 9090, 22, 
 
 # Download Terraform für UBUNTU
-Aktuelle Version von Terraform und Dokumentation sind hier: https://www.terraform.io/downloads 
-![alt text](/terraform_bild.jpeg)
+Aktuelle Version von Terraform und Dokumentation sind hier: https://www.terraform.io/downloads </br>
+![alt text](/ter_bild.jpeg) </br>
 
 
-Schritt 1: Register HashiCorp GPG keys
-$ curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+Schritt 1: Register HashiCorp GPG keys </br>
+$ curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add - </br>
 
-Schritt 2: Add HashiCorp package repository
-$ sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+Schritt 2: Add HashiCorp package repository </br>
+$ sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main" </br>
 
-Schritt 3: Update "Ubuntu" packages list
-$ sudo apt-get update
+Schritt 3: Update "Ubuntu" packages list </br>
+$ sudo apt-get update </br>
 
-Schritt 3: Install Terraform on Ubuntu
-$ sudo apt-get install terraform
+Schritt 3: Install Terraform on Ubuntu </br> 
+$ sudo apt-get install terraform </br>
 
-Schritt 4: Überprüfen Sie die Version von Terraform
-$ terraform -v
+Schritt 4: Überprüfen Sie die Version von Terraform </br>
+$ terraform -v </br>
 
-Schritt 5: Wo befindet sich Terraform
-$ which terraform
+Schritt 5: Wo befindet sich Terraform </br>
+$ which terraform </br>
