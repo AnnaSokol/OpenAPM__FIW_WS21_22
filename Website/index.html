@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--<titel align="center">WebServer mit Terraform</titel>-->
+  <meta charset="UTF-8">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* Style the header */
+    header {
+      background-color: #666;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      font-style: italic;
+      color: white;
+    }
+    img {
+      float:right;
+      width:100px;
+      margin-left:15px;
+    }
+    
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 30%;
+      height: 300px; /* only for demonstration, should be removed */
+      background: #ccc;
+      padding: 20px;
+    }
+    .button {
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      /*transition-duration: 0.4s; */
+      cursor: pointer;
+    }
+    
+    .button1 {
+      background-color: rgb(146, 15, 15);
+      border: none;
+      color: white;
+      padding: 20px 34px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 4px 2px;
+      cursor: pointer;
+      }
+
+    
+    .button1:hover {
+      background-color: #ddf1dd;
+      color: white;
+    }
+    .button2 {
+      background-color: rgb(146, 15, 15) ;
+      border: none;
+      color: white;
+      padding: 20px 68px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 4px 2px;
+      cursor: pointer;
+      }
+    
+    .button2:hover {
+      background-color: #ddf1dd;
+      color: white;
+    } 
+    .button3 {
+      background-color: rgb(146, 15, 15) ;
+      border: none;
+      color: white;
+      padding: 20px 90px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 4px 2px;
+      cursor: pointer;
+      }
+    
+    .button3:hover {
+      background-color: #ddf1dd;
+      color: white;
+    } 
+    
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #f1f1f1;
+      height: 300px; /* only for demonstration, should be removed */
+    }
+    
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Style the footer */
+    footer {
+      background-color: #777;
+      padding: 10px;
+      width: 100%;
+      text-align: center;
+      font-style: italic;
+      color: rgb(146, 15, 15);
+    }
+
+    .box {
+      float: left;
+      width: 25%;
+      padding: 50px;
+    }
+    
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+    </style>
+</head>
+<body>
+    
+    <h2>B34.1 Projekte in der Wirtschaft</h2>
+    <p></p>
+    
+    
+    <header>
+      <img src="../bild_htw.jpg" />
+      <h2 style="color:aliceblue" >Projekt "OpenAPM-as-a-Service"</h2>
+    </header>
+    
+    <section>
+      <nav>
+        <ul>
+          <!--<li><a href="#">London</a></li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Tokyo</a></li>-->
+          <li><a href="http://grafana-htw-berlin.novatec-apm.de/" class="button1">Grafana Dashboard</a></li>
+          <li><a href="http://52.59.200.25:9090" class="button2">Prometheus</a></li>
+          <li><a href="https://github.com/AnnaSokol/OpenAPM__FIW_WS21_22.git" class="button3">GitHub</a></li>
+        </ul>
+      </nav>
+      
+      <article>
+        <h1>Produktziel: </h1>
+        <p>Es soll eine Anwendung entwickelt werden, welche für Start-ups und Kleinunternehmer ein kostengünstiges bzw. kostenfreies Monitoring ermöglicht. Monitoring bietet den Vorteil, durch Beobachtung des jeweiligen Systems, richtige Entscheidung treffen, Kosten sparen und Geschäftsprozesse optimieren zu können. Dabei werden Parameter wie, die Auslastung, Traffic, Fehlermeldungen und Bearbeitungszeiten von Anfragen beobachtet. Dadurch können wiederholende Überlastungen bzw. Fehlerquellen behoben werden. 
+          Die Handhabung unserer Anwendung ist unkompliziert und für den Laien gut verständlich, zudem sind nur notwendige Anwendungen und Funktionen vorhanden, um eine einfache Bedienung zu gewährleisten. Anders als Produkte der Wettbewerber ist unsere Anwendung auf das wenstlichste fokussiert und zudem Open Source.</p>
+        
+      </article>
+    </section>
+    
+    <footer>
+      <h1 style="color:aliceblue">Technische Rahmenbedingen </h1>
+      <!--<div class="clearfix">-->
+        <div class="box" style="background-color:#bbb">
+        <!--<h2>AWS</h2>-->
+        <img src="../Amazon.jpg" />
+        </div>
+        <div class="box" style="background-color:#ccc">
+        <h2>Terraform</h2>
+        </div>
+        <div class="box" style="background-color:#ddd">
+        <h2>Grafana</h2>
+        </div>
+        <div class="box" style="background-color:#eee">
+        <h2>Prometheus</h2>
+        </div>
+        <p style="color:#ddd">HTW Berlin</p>
+        <!--</div>-->
+      <!--<ul>
+        <li>Terraform</li>
+        <li>Grafana</li>
+        <li>Prometheus</li>
+        <li>AWS</li>
+      </ul>-->
+      <!--<p>HTW Berlin</p>-->
+    </footer>
+    
+</body>
+</html>
