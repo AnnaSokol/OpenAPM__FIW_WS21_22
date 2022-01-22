@@ -32,3 +32,11 @@ $ terraform -v </br>
 
 ### 6: Check PATH of Terraform </br>
 $ which terraform </br>
+
+# Schritt 2: Clone Repository </br>
+$ curl https://github.com/AnnaSokol/OpenAPM__FIW_WS21_22.git </br>
+
+# Schritt 3: 
+$ cd OpenAPM__FIW_WS21_22
+„Access Key ID“ und „Secret Access key“ einfügen in das File #### main.tf 
+
