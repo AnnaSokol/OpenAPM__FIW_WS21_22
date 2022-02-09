@@ -6,12 +6,12 @@
 #### -> In this tutorial, we will create an AWS EC2 Instance monitor the AWS EC2 instances using Prometheus and visualize the dashboard using Grafana.
 
 ## Agenda:
-1. [Step 1:](#Download Terraform on Ubuntu)
-2. [Step 2:](#Clone Repository)
-3. [Step 3:](#Con gure Terraform)
-4. [Step 4:](#Adapt the default parameters)
-5. [Step 5:](#Create EC2-Instance with Terraform)
-6. [Step 6:](#Your Instance is online)
+1. [Step 1: Download Terraform on Ubuntu](#download)
+2. [Step 2: Clone Repository](#repository)
+3. [Step 3: Configure Terraform](#configure)
+4. [Step 4: Adapt the default parameters](#adapt)
+5. [Step 5: Create EC2-Instance with Terraform](#CreateEC2-Instance)
+6. [Step 6: Your Instance is online](#Instance_is_online)
 7. [Step 7:](#Troubleshooting)
 
 # Prerequisite:
@@ -28,25 +28,31 @@ Port 9100 — Prometheus Node Exporter </br>
 Port 3000 — Grafana </br>
 Port 22 — SSH </br>
 
-### Step 1: Download Terraform on Ubuntu
+## Step 1: Download Terraform on Ubuntu
 ***
 1. Choose your IDE and create a new Project
 Possible IDE: Eclipse, IntelliJ IDEA, PyCharm, Visual Studio Code etc. </br>
 2. Install Terraform </br>
 (Newest Version of Terraform: https://www.terraform.io/downloads)</br>
-##### $ sudo apt-get install terraform </br>
-3. Check version - Is it properly installed? </br>
-##### $ terraform -v </br>
-4. Check PATH of Terraform </br>
-##### $ which terraform which terraform </br>
+```
+$ sudo apt-get install terraform
+```
+3. Check version - Is it properly installed?
+```
+$ terraform -v 
+```
+4. Check PATH of Terraform 
+```
+$ which terraform which terraform 
+```
 
-### Step 2: Clone Repository </br>
+## Step 2: Clone Repository </br>
 ***
 ```
 $ curl https://github.com/AnnaSokol/OpenAPM__FIW_WS21_22.git
 ```
 
-### Step 3: Configure Terraform
+## Step 3: Configure Terraform
 ***
 #### -> Add your AWS „Access Key ID“ and „Secret Access key“ in the le main.tf </br>
 ```
@@ -54,12 +60,12 @@ $ cd OpenAPM__FIW_WS21_22/main.tf
 ```
 #### -> To get your access key ID and secret access key ppen the Security credentials tab on aws.com , and then choose Create access key. To see the new access key, choose Show. Your credentials resemble the following:
 
-### Step 4: Adapt the default parameters </br>
+## Step 4: Adapt the default parameters </br>
 ***
 ```
 $ cd OpenAPM__FIW_WS21_22/variables.tf
 ```
-### Step 5: Create EC2-Instance with Terraform
+## Step 5: Create EC2-Instance with Terraform
 ***
 ```
 $ terraform init </br>
@@ -67,11 +73,11 @@ $ terraform plan </br>
 $ terraform apply </br>
 ```
 
-### Step 6: Your Instance is online 
+## Step 6: Your Instance is online 
 ***
 Check your Instance online: 
 
-### Step 7: Troubleshooting
+## Step 7: Troubleshooting
 ***
 Solve - SignatureDoesNotMatch Error in AWS CLI </br>
 
