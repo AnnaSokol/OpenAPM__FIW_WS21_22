@@ -5,15 +5,15 @@
 
 #### -> In this tutorial, we will create an AWS EC2 Instance monitor the AWS EC2 instances using Prometheus and visualize the dashboard using Grafana.
 
-# Agenda:
-***
-Step 1: Download Terraform on Ubuntu </br>
-Step 2: Clone Repository </br>
-Step 3: Con gure Terraform </br>
-Step 4: Adapt the default parameters </br>
-Step 5: Create EC2-Instance with Terraform </br>
-Step 6: Your Instance is online </br>
-Step 7: Troubleshooting </br>
+## Agenda:
+1. [Step 1:](#Download Terraform on Ubuntu)
+2. [Step 2:](#Clone Repository)
+3. [Step 3:](#Con gure Terraform)
+4. [Step 4:](#Adapt the default parameters)
+5. [Step 5:](#Create EC2-Instance with Terraform)
+6. [Step 6:](#Your Instance is online)
+7. [Step 7:](#Troubleshooting)
+
 # Prerequisite:
 ***
 #### Example with free use AWS EC2-Instance:</br>
@@ -28,7 +28,8 @@ Port 9100 — Prometheus Node Exporter </br>
 Port 3000 — Grafana </br>
 Port 22 — SSH </br>
 
-## Step 1: Download Terraform on Ubuntu
+### Step 1: Download Terraform on Ubuntu
+***
 1. Choose your IDE and create a new Project
 Possible IDE: Eclipse, IntelliJ IDEA, PyCharm, Visual Studio Code etc. </br>
 2. Install Terraform </br>
@@ -39,28 +40,39 @@ Possible IDE: Eclipse, IntelliJ IDEA, PyCharm, Visual Studio Code etc. </br>
 4. Check PATH of Terraform </br>
 ##### $ which terraform which terraform </br>
 
-## Step 2: Clone Repository </br>
-##### $ curl https://github.com/AnnaSokol/OpenAPM__FIW_WS21_22.git
+### Step 2: Clone Repository </br>
+***
+```
+$ curl https://github.com/AnnaSokol/OpenAPM__FIW_WS21_22.git
+```
 
-## Step 3: Configure Terraform
+### Step 3: Configure Terraform
+***
 #### -> Add your AWS „Access Key ID“ and „Secret Access key“ in the le main.tf </br>
-##### $ cd OpenAPM__FIW_WS21_22/main.tf </br>
+```
+$ cd OpenAPM__FIW_WS21_22/main.tf
+```
 #### -> To get your access key ID and secret access key ppen the Security credentials tab on aws.com , and then choose Create access key. To see the new access key, choose Show. Your credentials resemble the following:
 
-## Step 4: Adapt the default parameters </br>
-##### $ cd OpenAPM__FIW_WS21_22/variables.tf
-
-## Step 5: Create EC2-Instance with Terraform
+### Step 4: Adapt the default parameters </br>
+***
+```
+$ cd OpenAPM__FIW_WS21_22/variables.tf
+```
+### Step 5: Create EC2-Instance with Terraform
+***
 ```
 $ terraform init </br>
 $ terraform plan </br>
 $ terraform apply </br>
 ```
 
-## Step 6: Your Instance is online </br>
+### Step 6: Your Instance is online 
+***
 Check your Instance online: 
 
-## Step 7: Troubleshooting
+### Step 7: Troubleshooting
+***
 Solve - SignatureDoesNotMatch Error in AWS CLI </br>
 
 #### There are 4 main reasons the SignatureDoesNotMatch occurs in AWS CLI: </br>
