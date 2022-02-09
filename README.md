@@ -17,14 +17,11 @@
 ## Prerequisite:
 #### Example with free use AWS EC2-Instance:</br>
 
+| Produkt | Type |
 | Amazon Machine | Ubuntu Server 20.04 |
-|:--------------|:-------------:|
 | Amazon Machine Images | ami-0a49b025fffbbdac6 |
-|:--------------|:-------------:|
 | Region | Frankfurt (eu-central-1) |
-|:--------------|:-------------:|
 | AWS Instance type | t2.micro |
-|:--------------|:-------------:|
 | Ports | 3000, 9090, 22, 9100 |
 
 • Amazon Machine: Ubuntu Server 20.04 </br>
