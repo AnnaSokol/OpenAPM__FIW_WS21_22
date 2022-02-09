@@ -16,6 +16,17 @@
 
 ## Prerequisite:
 #### Example with free use AWS EC2-Instance:</br>
+
+| Amazon Machine | Ubuntu Server 20.04 |
+|:--------------|:-------------:|
+| Amazon Machine Images | ami-0a49b025fffbbdac6 |
+|:--------------|:-------------:|
+| Region | Frankfurt (eu-central-1) |
+|:--------------|:-------------:|
+| AWS Instance type | t2.micro |
+|:--------------|:-------------:|
+| Ports | 3000, 9090, 22, 9100 |
+
 • Amazon Machine: Ubuntu Server 20.04 </br>
 • Amazon Machine Images: ami-0a49b025fffbbdac6 </br>
 • Region: Frankfurt (eu-central-1) </br>
@@ -78,7 +89,7 @@ Check your Instance online:
 
 ## Step 7: Troubleshooting
 ***
-####Solve - SignatureDoesNotMatch Error in AWS CLI </br>
+#### Solve - SignatureDoesNotMatch Error in AWS CLI </br>
 
 #### There are 4 main reasons the SignatureDoesNotMatch occurs in AWS CLI: </br>
 1. Your secret access key or access key id are incorrect </br>
