@@ -3,16 +3,17 @@
 
 # AWS EC2 Instance with Grafana and Prometheus using Terraform and Docker 
 
-#### In this tutorial, we will create an AWS EC2 Instance monitor the AWS EC2 instances using Prometheus and visualize the dashboard using Grafana.
+> #### In this tutorial, we will create an AWS EC2 Instance monitor the AWS EC2 instances 
+> #### using Prometheus and visualize the dashboard using Grafana.
 
 ## Agenda
-[Step 1:Download Terraform on Ubuntu](#download)
-[Step 2: Clone Repository](#repository)
-[Step 3: Configure Terraform](#configure)
-[Step 4: Adapt the default parameters](#adapt)
-[Step 5: Create EC2-Instance with Terraform](#CreateEC2-Instance)
-[Step 6: Your Instance is online](#Instance_is_online)
-[Step 7: Troubleshooting](#Troubleshooting)
+[Step 1:](#download) Download Terraform on Ubuntu </br>
+[Step 2:](#repository) Clone Repository </br>
+[Step 3: Configure Terraform](#configure)</br>
+[Step 4: Adapt the default parameters](#adapt)</br>
+[Step 5: Create EC2-Instance with Terraform](#CreateEC2-Instance)</br>
+[Step 6: Your Instance is online](#Instance_is_online)</br>
+[Step 7: Troubleshooting](#Troubleshooting)</br>
 
 ## Prerequisite:
 #### Example with free use AWS EC2-Instance:</br>
