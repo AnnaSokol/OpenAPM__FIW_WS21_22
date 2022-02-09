@@ -25,11 +25,6 @@
 | AWS Instance type | t2.micro |
 | Ports | 3000, 9090, 22, 9100 |
 
-• Amazon Machine: Ubuntu Server 20.04 </br>
-• Amazon Machine Images: ami-0a49b025fffbbdac6 </br>
-• Region: Frankfurt (eu-central-1) </br>
-• AWS Instance type: t2.micro </br>
-• Ports: 3000, 9090, 22, 9100 </br>
 
 > Port 9090 — Prometheus Server </br>
 > Port 9100 — Prometheus Node Exporter </br>
