@@ -3,17 +3,16 @@
 
 # AWS EC2 Instance with Grafana and Prometheus using Terraform and Docker 
 
-> #### In this tutorial, we will create an AWS EC2 Instance monitor the AWS EC2 instances 
-> #### using Prometheus and visualize the dashboard using Grafana.
+> #### In this tutorial, we will create an AWS EC2 Instance monitor the AWS EC2 instances using Prometheus and visualize the dashboard using Grafana.
 
 ## Agenda
 [Step 1:](#download) Download Terraform on Ubuntu </br>
 [Step 2:](#repository) Clone Repository </br>
-[Step 3: Configure Terraform](#configure)</br>
-[Step 4: Adapt the default parameters](#adapt)</br>
-[Step 5: Create EC2-Instance with Terraform](#CreateEC2-Instance)</br>
-[Step 6: Your Instance is online](#Instance_is_online)</br>
-[Step 7: Troubleshooting](#Troubleshooting)</br>
+[Step 3: ](#configure) Configure Terraform </br>
+[Step 4: ](#adapt) Adapt the default parameters </br>
+[Step 5: ](#CreateEC2-Instance) Create EC2-Instance with Terraform</br>
+[Step 6: ](#Instance_is_online) Your Instance is online </br>
+[Step 7: ](#Troubleshooting) Troubleshooting </br>
 
 ## Prerequisite:
 #### Example with free use AWS EC2-Instance:</br>
@@ -58,7 +57,7 @@ $ curl https://github.com/AnnaSokol/OpenAPM__FIW_WS21_22.git
 ```
 $ cd OpenAPM__FIW_WS21_22/main.tf
 ```
-#### To get your access key ID and secret access key ppen the Security credentials tab on aws.com , and then choose Create access key. To see the new access key, choose Show. Your credentials resemble the following:
+> #### To get your access key ID and secret access key ppen the Security credentials tab on aws.com , and then choose Create access key. To see the new access key, choose Show. Your credentials resemble the following:
 
 ## Step 4: Adapt the default parameters 
 ***
@@ -79,7 +78,7 @@ Check your Instance online:
 
 ## Step 7: Troubleshooting
 ***
-Solve - SignatureDoesNotMatch Error in AWS CLI </br>
+####Solve - SignatureDoesNotMatch Error in AWS CLI </br>
 
 #### There are 4 main reasons the SignatureDoesNotMatch occurs in AWS CLI: </br>
 1. Your secret access key or access key id are incorrect </br>
