@@ -5,17 +5,16 @@
 
 #### -> In this tutorial, we will create an AWS EC2 Instance monitor the AWS EC2 instances using Prometheus and visualize the dashboard using Grafana.
 
-## Agenda:
+## Agenda
 1. [Step 1: Download Terraform on Ubuntu](#download)
 2. [Step 2: Clone Repository](#repository)
 3. [Step 3: Configure Terraform](#configure)
 4. [Step 4: Adapt the default parameters](#adapt)
 5. [Step 5: Create EC2-Instance with Terraform](#CreateEC2-Instance)
 6. [Step 6: Your Instance is online](#Instance_is_online)
-7. [Step 7:](#Troubleshooting)
+7. [Step 7: Troubleshooting](#Troubleshooting)
 
 # Prerequisite:
-***
 #### Example with free use AWS EC2-Instance:</br>
 • Amazon Machine: Ubuntu Server 20.04 </br>
 • Amazon Machine Images: ami-0a49b025fffbbdac6 </br>
@@ -46,7 +45,7 @@ $ terraform -v
 $ which terraform which terraform 
 ```
 
-## Step 2: Clone Repository </br>
+## Step 2: Clone Repository
 ***
 ```
 $ curl https://github.com/AnnaSokol/OpenAPM__FIW_WS21_22.git
