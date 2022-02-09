@@ -18,6 +18,7 @@
 #### Example with free use AWS EC2-Instance:</br>
 
 | Produkt | Type |
+|:--------------|:-------------:|
 | Amazon Machine | Ubuntu Server 20.04 |
 | Amazon Machine Images | ami-0a49b025fffbbdac6 |
 | Region | Frankfurt (eu-central-1) |
