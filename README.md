@@ -1,42 +1,73 @@
 # Projekt "OpenAPM"
 ![alt text](/grafana_bild.jpeg)
 
-# Erstellen Grafana und Prometheus auf AWS mit Terraform und Docker 
+# AWS EC2 Instance with Grafana and
+# Prometheus using Terraform and Docker 
 
-AWS EC2-Instance:
-- Amazon Machine: Ubuntu Server 20.04 
-- Amazon Machine Images: ami-0a49b025fffbbdac6
-- Region: Frankfurt (eu-central-1) 
-- AWS Instance type: t3.micro
-- Ports: 3000, 9090, 22, 
+-> In this tutorial, we will create an AWS EC2 Instance monitor the AWS EC2 instances using
+Prometheus and visualize the dashboard using Grafana.
 
-# Schritt 1: Download Terraform on UBUNTU
-Aktuelle Version von Terraform und Dokumentation sind hier: https://www.terraform.io/downloads </br>
-![alt text](/ter_bild.jpeg) </br>
+# Agenda:
+Step 1: Download Terraform on Ubuntu
+Step 2: Clone Repository
+Step 3: Con gure Terraform
+Step 4: Adapt the default parameters
+Step 5: Create EC2-Instance with Terraform
+Step 6: Your Instance is online
+Step 7: Troubleshooting
+# Prerequisite:
+Example with free use AWS EC2-Instance:
+• Amazon Machine: Ubuntu Server 20.04
+• Amazon Machine Images: ami-0a49b025fffbbdac6
+• Region: Frankfurt (eu-central-1)
+• AWS Instance type: t2.micro
+• Ports: 3000, 9090, 22, 9100
 
+Port 9090 — Prometheus Server
+Port 9100 — Prometheus Node Exporter
+Port 3000 — Grafana
+Port 22 — SSH
 
-### 1: Register HashiCorp GPG keys </br>
-$ curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add - </br>
+## Step 1: Download Terraform on Ubuntu
+1. Choose your IDE and create a new Project
+Possible IDE: Eclipse, IntelliJ IDEA, PyCharm, Visual Studio Code etc.
+2. Install Terraform
+(Newest Version of Terraform: https://www.terraform.io/downloads)
+$ sudo apt-get install terraform
+3: Check version - Is it properly installed?
+$ terraform -v
+4: Check PATH of Terraform
+$ which terraform which terraform
 
-### 2: add HashiCorp package repository </br>
-$ sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main" </br>
+## Step 2: Clone Repository
+$ curl https://github.com/AnnaSokol/OpenAPM__FIW_WS21_22.git
 
-### 3: Update "Ubuntu" </br>
-$ sudo apt-get update </br>
+## Step 3: Con gure Terraform
+-> Add your AWS „Access Key ID“ and „Secret Access key“ in the le main.tf
+$ cd OpenAPM__FIW_WS21_22/main.tf
+-> To get your access key ID and secret access key ppen the Security credentials tab on
+aws.com , and then choose Create access key. To see the new access key, choose Show. Your
+credentials resemble the following:
 
-### 4: Install Terraform on Ubuntu </br> 
-$ sudo apt-get install terraform </br>
+## Step 4: Adapt the default parameters
+$ cd OpenAPM__FIW_WS21_22/variables.tf
 
-### 5: Check version of Terraform </br>
-$ terraform -v </br>
+## Step 5: Create EC2-Instance with Terraform
+$ terraform init
+$ terraform plan
+$ terraform apply
 
-### 6: Check PATH of Terraform </br>
-$ which terraform </br>
+## Step 6: Your Instance is online
+Check your Instance online:
 
-# Schritt 2: Clone Repository </br>
-$ curl https://github.com/AnnaSokol/OpenAPM__FIW_WS21_22.git </br>
+## Step 7: Troubleshooting
+Solve - SignatureDoesNotMatch Error in AWS CLI
 
-# Schritt 3: 
-$ cd OpenAPM__FIW_WS21_22
-„Access Key ID“ und „Secret Access key“ einfügen in das File #### main.tf 
-
+There are 4 main reasons the SignatureDoesNotMatch occurs in AWS CLI:
+1. Your secret access key or access key id are incorrect
+2. Your auto-generated secret access key contains special characters (e.g. % , /, or + characters) that
+cause the error, try to create a new key pair
+3. You are in a virtual machine and there is a discrepancy between the host's OS time and the guest's
+OS time
+4. You reached the maximum capacity of your region contingent which must be explicitly enabled
+and free. Change either your region or expand your contingent.
