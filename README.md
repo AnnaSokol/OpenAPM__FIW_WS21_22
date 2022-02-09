@@ -3,16 +3,16 @@
 
 # AWS EC2 Instance with Grafana and Prometheus using Terraform and Docker 
 
-#### -> In this tutorial, we will create an AWS EC2 Instance monitor the AWS EC2 instances using Prometheus and visualize the dashboard using Grafana.
+#### In this tutorial, we will create an AWS EC2 Instance monitor the AWS EC2 instances using Prometheus and visualize the dashboard using Grafana.
 
 ## Agenda
-1. [Download Terraform on Ubuntu](#download)
-2. [Clone Repository](#repository)
-3. [Configure Terraform](#configure)
-4. [Step 4: Adapt the default parameters](#adapt)
-5. [Step 5: Create EC2-Instance with Terraform](#CreateEC2-Instance)
-6. [Step 6: Your Instance is online](#Instance_is_online)
-7. [Step 7: Troubleshooting](#Troubleshooting)
+[Step 1:Download Terraform on Ubuntu](#download)
+[Step 2: Clone Repository](#repository)
+[Step 3: Configure Terraform](#configure)
+[Step 4: Adapt the default parameters](#adapt)
+[Step 5: Create EC2-Instance with Terraform](#CreateEC2-Instance)
+[Step 6: Your Instance is online](#Instance_is_online)
+[Step 7: Troubleshooting](#Troubleshooting)
 
 ## Prerequisite:
 #### Example with free use AWS EC2-Instance:</br>
@@ -53,13 +53,13 @@ $ curl https://github.com/AnnaSokol/OpenAPM__FIW_WS21_22.git
 
 ## Step 3: Configure Terraform
 ***
-#### -> Add your AWS „Access Key ID“ and „Secret Access key“ in the le main.tf </br>
+#### Add your AWS „Access Key ID“ and „Secret Access key“ in the le main.tf 
 ```
 $ cd OpenAPM__FIW_WS21_22/main.tf
 ```
-#### -> To get your access key ID and secret access key ppen the Security credentials tab on aws.com , and then choose Create access key. To see the new access key, choose Show. Your credentials resemble the following:
+#### To get your access key ID and secret access key ppen the Security credentials tab on aws.com , and then choose Create access key. To see the new access key, choose Show. Your credentials resemble the following:
 
-## Step 4: Adapt the default parameters </br>
+## Step 4: Adapt the default parameters 
 ***
 ```
 $ cd OpenAPM__FIW_WS21_22/variables.tf
